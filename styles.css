@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(54, 255, 47);
+  ПОДКЛЮЧАЕМ ШРИФТ
+  font-size: 50px
+}
+
+
+button {
+  background-color: rgb(54, 255, 47);
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  ПОДКЛЮЧАЕМ ШРИФТ
+}
+
+
+.clockCase {
+  ПОДКЛЮЧАЕМ ФЛЕКСЫ
+  ПО ЦЕНТРУ
+}
+
+
+.buttonCase {
+  ПОДКЛЮЧАЕМ ФЛЕКСЫ
+  ПО ЦЕНТРУ
+}
