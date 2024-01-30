@@ -5,14 +5,14 @@ body {
   font-family: 'Russo One', sans-serif;
   font-size: 50px
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 button {
   background-color: rgb(54, 255, 47);
   color: black;
   padding: 10px 20px;
   font-size: 16px;
-  ПОДКЛЮЧАЕМ ШРИФТ
+  font-family: 'Russo One', sans-serif;
 }
 
 
