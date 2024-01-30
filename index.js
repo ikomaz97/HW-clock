@@ -1,24 +1,33 @@
-
 let timerId = null;
-
 
 const startButton = document.getElementById("start");
 startButton.addEventListener("click", function () {
-    timerId = setInterval(updateClock, 1000);
+       if (timerId === null) {
+        timerId = setInterval(updateClock, 1000);
+    }
 });
-
 
 const stopButton = document.getElementById("stop");
 stopButton.addEventListener("click", function () {
-       clearInterval(timerId);
+    clearInterval(timerId);
+    timerId = null;
 });
-
 
 function updateClock() {
     const clock = document.getElementById('clock');
-    const now = new Date();
-    const hours = now.getHours()
-    const minutes = now.getMinutes()
-    const seconds = now.getSeconds()
-    clock.textContent = hours + ':' + minutes + ':' + seconds;
+
+
+    if (clock) {
+        const now = new Date();
+        const hours = formatTime(now.getHours());
+        const minutes = formatTime(now.getMinutes());
+        const seconds = formatTime(now.getSeconds());
+
+        clock.textContent = hours + ':' + minutes + ':' + seconds;
+    }
 }
+
+function formatTime(time) {
+    return time < 10 ? '0' + time : time;
+}
+
